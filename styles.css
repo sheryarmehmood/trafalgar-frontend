@@ -1,0 +1,282 @@
+/* General Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Mulish', sans-serif;
+  background-color: #fff;
+  color: #1f1534;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navbar Styles */
+.navbar {
+  padding: 56px 0px 24px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+.logo-icon {
+  background-color: #458FF6;
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+}
+.logo-text {
+  font-size: 24px;
+  color: #233348;
+  font-weight: bold;
+}
+.nav-links {
+  display: flex;
+  gap: 40px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #1f1534;
+  opacity: 0.5;
+  font-size: 18px;
+  transition: opacity 0.3s ease;
+  font-weight: bold;
+}
+.nav-links a.active,
+.nav-links a:hover {
+  opacity: 1;
+  font-weight: bold;
+  color: #1f1534;
+}
+
+/* Hero Section */
+.hero {
+  position: relative; /* Needed for absolute children */
+  padding: 60px 0;
+  overflow: hidden; /* Prevents overflow from decorative element */
+}
+
+.hero-decor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: auto;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-text {
+  max-width: 440px;
+}
+.hero-text h1 {
+  font-size: 48px;
+  color: #000;
+  margin-bottom: 25px;
+  line-height: 56px;
+  font-weight: bold;
+}
+.hero-text p {
+  font-size: 21px;
+  color: #7D7987;
+  margin-bottom: 45px;
+  font-weight: light;
+  line-height: 32px;
+}
+.btn-primary {
+  display: inline-block;
+  background-color: #458FF6;
+  color: white;
+  padding: 16px 40px;
+  border-radius: 55px;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: #3673d4;
+}
+
+.hero-image{
+margin-left:70px;
+max-width:690px;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Services Section */
+.services {
+  position: relative;
+  padding: 220px 0px 130px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.services::before {
+  content: "";
+  position: absolute;
+  top: 450px; /* adjust until blob overlaps cards correctly */
+  left: 0;
+  width: 750px;
+  height: 600px;
+  background: url("images/services-bg.png") no-repeat;
+  background-size: contain;
+  transform: rotate(-1.5deg);
+  opacity: 1;
+  z-index: 1;
+  pointer-events: none;
+}
+
+
+.services::after {
+  content: "";
+  position: absolute;
+  top: 790px; /* adjust this to match card alignment */
+  right: 170px;
+  width: 132px;
+  height: 115px;
+  background: url("images/services-dots.png") no-repeat;
+  background-size: contain;
+  opacity: 0.8;
+  
+  pointer-events: none;
+}
+
+
+/* .services-header,
+.service-cards,
+.services-button {
+  position: relative;
+  z-index: 2;
+} */
+
+
+.services-header {
+  max-width: 860px;
+  margin: 0 auto 80px;
+  position: relative;
+  z-index: 1;
+}
+
+.services-header h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #000;
+  line-height: 1.2;
+}
+
+.services-header .underline {
+  width: 56px;
+  height: 2px;
+  background-color: #000; /* or Figma’s exact color */
+  margin: 26px auto 33px;
+}
+
+ 
+.services-header p {
+  color: #7D7987;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: light;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 50px 45px 47px 38px;
+  box-shadow: 0px 10px 40px rgba(229, 233, 246, 0.4);
+  max-width: 350px;
+  height:350px;
+  flex: 1 1 300px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  height: 80px;
+  margin-bottom: 30px;
+}
+
+.card h3 {
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.card p {
+  font-size: 16px;
+  color: #7D7987;
+  line-height: 28px;
+  font-weight: 300;
+}
+
+.services-button {
+  margin-top: 70px;
+  position: relative;
+  z-index: 1;
+}
+
+.services-learn-btn {
+  display: inline-block;
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  color: #458FF6;
+  border: 1.4px solid #458FF6;
+  border-radius: 55px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.services-learn-btn:hover {
+  background-color: #458FF6;
+  color: #fff;
+}
+
+
+
