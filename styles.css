@@ -12,7 +12,7 @@ body {
   line-height: 1.6;
 }
 .container {
-  max-width: 1120px;
+  max-width: 1266px;
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
@@ -76,7 +76,7 @@ body {
 
 .hero-decor {
   position: absolute;
-  top: 0;
+  top: 60px;
   left: 0;
   width: 100px;
   height: auto;
