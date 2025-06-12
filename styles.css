@@ -171,14 +171,6 @@ max-width:690px;
 }
 
 
-/* .services-header,
-.service-cards,
-.services-button {
-  position: relative;
-  z-index: 2;
-} */
-
-
 .services-header {
   max-width: 860px;
   margin: 0 auto 80px;
@@ -278,5 +270,84 @@ max-width:690px;
   color: #fff;
 }
 
+
+
+/* Healthcare Section */
+.healthcare-section {
+  padding: 0px;
+  background-color: #fff;
+}
+
+.healthcare-container {
+  max-width: 1273px;
+  margin: 0px 192px 0px 135px;
+  /* padding: 0 20px; */
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 137px;
+}
+
+/* Image Block */
+.healthcare-image img {
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+}
+
+/* Text Content */
+.healthcare-text {
+  max-width: 486px;
+}
+
+.healthcare-text h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #000000;
+  line-height: 56px;
+  margin-bottom: 25px;
+}
+
+.healthcare-text .underline {
+  width: 56px;
+  height: 2px;
+  background-color: #000;
+  margin-bottom: 33px;
+}
+
+.healthcare-text p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #7D7987;
+  font-weight: 300;
+  margin-bottom: 37px;
+}
+
+/* Button */
+.healthcare-button {
+  position: relative;
+  z-index: 1;
+}
+
+.healthcare-learn-btn {
+  display: inline-block;
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  color: #458FF6;
+  border: 1.4px solid #458FF6;
+  border-radius: 55px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.healthcare-learn-btn:hover {
+  background-color: #458FF6;
+  color: #fff;
+}
 
 
