@@ -363,12 +363,10 @@ max-width:690px;
 
 .apps-container {
   max-width: 1365px;
-  /* margin: 0 auto; */
   margin-left:280px;
-  /* padding: 0 20px; */
+  padding-top: 230px;
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
   gap: 60px;
 }
 
@@ -377,8 +375,7 @@ max-width:690px;
   position: absolute;
   top: 0;
   right: 0;
- 
-  width: 100px;
+  width: 90px;
   height: auto;
   z-index: 0;
   pointer-events: none;
@@ -418,18 +415,31 @@ max-width:690px;
   margin-bottom: 45px;
 }
 
-.btn-primary {
-  display: inline-block;
-  padding: 16px 40px;
-  background-color: #458FF6;
-  color: white;
-  border-radius: 55px;
-  font-size: 18px;
-  font-weight: 700;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
+/* Button */
+.apps-button {
+  position: relative;
+  z-index: 1;
 }
 
-.btn-primary:hover {
-  background-color: #3673d4;
+
+
+.apps-download-btn {
+  display: inline-block;
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  color: #458FF6;
+  border: 1.4px solid #458FF6;
+  border-radius: 55px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.apps-download-btn:hover {
+  background-color: #458FF6;
+  color: #fff;
 }
