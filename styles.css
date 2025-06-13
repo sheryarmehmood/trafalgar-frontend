@@ -288,6 +288,7 @@ max-width:690px;
   gap: 137px;
 }
 
+
 /* Image Block */
 .healthcare-image img {
   width: 100%;
@@ -329,6 +330,8 @@ max-width:690px;
   z-index: 1;
 }
 
+
+
 .healthcare-learn-btn {
   display: inline-block;
   width: 200px;
@@ -351,3 +354,82 @@ max-width:690px;
 }
 
 
+/* mobile apps Section */
+.apps-section {
+  position:relative;
+  /* padding: 100px 0; */
+  background-color: #fff;
+}
+
+.apps-container {
+  max-width: 1365px;
+  /* margin: 0 auto; */
+  margin-left:280px;
+  /* padding: 0 20px; */
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 60px;
+}
+
+
+.app-decor {
+  position: absolute;
+  top: 0;
+  right: 0;
+ 
+  width: 100px;
+  height: auto;
+  z-index: 0;
+  pointer-events: none;
+}
+
+
+.apps-image img {
+  width: 100%;
+  max-width: 665px;
+  height: auto;
+}
+
+.apps-text {
+  max-width: 420px;
+}
+
+.apps-text h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 48px;
+  margin-bottom: 25px;
+}
+
+.apps-text .underline {
+  width: 56px;
+  height: 2px;
+  background-color: #000;
+  margin-bottom: 33px;
+}
+
+.apps-text p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #7D7987;
+  font-weight: 400;
+  margin-bottom: 45px;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 16px 40px;
+  background-color: #458FF6;
+  color: white;
+  border-radius: 55px;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #3673d4;
+}
