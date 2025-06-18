@@ -641,6 +641,7 @@ max-width:690px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+  position: relative;
 }
 
 .article-card {
@@ -723,5 +724,34 @@ max-width:690px;
   color: #ffffff;
 }
 
+.articles-grid .articles-decor {
+  position: absolute;
+  top: -25px;
+  left: -30px;
+  width: 75px;
+  height: auto;
+  pointer-events: none;
+  z-index:-2;
+}
 
+/* .articles-section .articles-bg {
+  position: absolute;
+  top: -40px;
+  right: -400px;
+  width: 700px;
+  height: 450px;
+  pointer-events: none;
+  z-index:-3;
+  transform: rotate(180.5deg);
+} */
 
+.articles-section .articles-bg {
+  position: absolute;
+  top: 100px;
+  right: -90px;
+  width: 700px;
+  height: 480px;
+  pointer-events: none;
+  z-index:-3;
+  transform: rotate(170deg);
+} 
